@@ -1,9 +1,14 @@
 import React from 'react';
 import Welcomemessage from './WelcomeMessage';
 import ConfirmButton from './ConfirmButton';
+import Page from '../Shared/Page';
+import CoinGrid from './CoinGrid';
 
 
 export default function(){
-    return <div> <Welcomemessage /> <ConfirmButton /> </div>
-
+    return <Page name="setting">
+          <Welcomemessage /> 
+          <ConfirmButton /> 
+          <CoinGrid />
+        </Page>
 }
